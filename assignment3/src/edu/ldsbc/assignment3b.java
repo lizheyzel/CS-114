@@ -23,7 +23,8 @@ public class assignment3b {
         amt = initAmt + interest;
         System.out.println("After 1 month amount = " + amt);
 
-        amt = amt + interest + initAmt;
+        amt = amt + initAmt;
+        amt = amt + interest;
         System.out.println("After 2 months amount = " + amt);
 
         amt = amt + interest + initAmt * 2;
