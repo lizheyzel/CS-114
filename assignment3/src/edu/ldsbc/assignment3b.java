@@ -18,19 +18,29 @@ public class assignment3b {
         rate = rate / 12;
 
         double amt = initAmt;
-        double interest = amt * rate;
 
-        amt = initAmt + interest;
+        amt = initAmt;
+        amt = amt + (amt * rate);
         System.out.println("After 1 month amount = " + amt);
 
         amt = amt + initAmt;
-        amt = amt + interest;
+        amt = amt + (amt * rate);
         System.out.println("After 2 months amount = " + amt);
 
-        amt = amt + interest + initAmt * 2;
+        amt = amt + initAmt;
+        amt = amt + (amt * rate);
         System.out.println("After 3 months amount = " + amt);
 
-        amt = amt + interest + initAmt * 5;
+        amt = amt + initAmt;
+        amt = amt + (amt * rate);
+        System.out.println("After 4 months amount = " + amt);
+
+        amt = amt + initAmt;
+        amt = amt + (amt * rate);
+        System.out.println("After 5 months amount = " + amt);
+
+        amt = amt + initAmt;
+        amt = amt + (amt * rate);
         System.out.println("After 6 months amount = " + amt);
 
     }
